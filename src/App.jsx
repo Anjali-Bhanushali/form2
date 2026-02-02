@@ -30,16 +30,16 @@ const App = () => {
 
   const submitHandler = (e) => {
     e.preventDefault();
-    console.log(
-      formdata.fullName,
-      formdata.email,
-      formdata.password,
-      formdata.age,
-      formdata.address,
-      formdata.role,
-      formdata.gender,
-      formdata.dob,
-    );
+    console.log({
+      name: formdata.fullName,
+      email: formdata.email,
+      password: formdata.password,
+      age: formdata.age,
+      address: formdata.address,
+      role: formdata.role,
+      gender: formdata.gender,
+      dob: formdata.dob,
+    });
 
     if (formdata.password.length < 8) {
       setError("Password must be 8 character long");
